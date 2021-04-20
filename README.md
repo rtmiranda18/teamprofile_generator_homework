@@ -56,6 +56,7 @@ fs.writeFile("dist/index.html", fullHTML, err => {
 </html>
 ```
 ## Video Link
+https://drive.google.com/file/d/1Tse29wdvTPrqfdxifOglogqGoLkWqr9_/view?usp=sharing
 
 ## Author Links 
 [LinkedIn](https://www.linkedin.com/in/rosario-miranda-b81170132/)<br />
