@@ -144,7 +144,7 @@ let engineer_question = [];
 const writeUp = (data) => {
     console.log(data);
     let employees_list = getEmployees(data);
-fs.writeFile("dist/index.html", ` 
+const fullHTML = ` 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -164,16 +164,17 @@ fs.writeFile("dist/index.html", `
         </div>
     </div>
 </body>
-</html>
-    
-    `, err => {
+</html>`;
+
+function writePage() {
+fs.writeFile("dist/index.html", fullHTML, err => {
         if (err) {
             console.log(err);
         } else {
             console.log("Generating index.html...");
         }
     });
-}
+}}
 
 function getEmployees(employees){
     return employees.map(employee => `
