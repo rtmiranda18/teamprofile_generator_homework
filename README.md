@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 ## Site Picture
-![Site](TeamProfileGenerator.png)
+![Site](tpg.png)
 
 ## Technologies Used
 - Javascript - adds special effects on pages
