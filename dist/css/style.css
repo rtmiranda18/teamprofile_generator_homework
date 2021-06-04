@@ -31,6 +31,13 @@
     padding: 25px;
     border-radius: 10px;
 }
+.employee .jobTitle{
+    margin-top: -8px;
+}
+.employee .jobTitle img{
+    position: relative;
+    top: 6px;
+}
 .employee .topBlue{
     padding: 15px 20px;
     background-color: #0477f7;
