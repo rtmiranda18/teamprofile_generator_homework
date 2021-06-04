@@ -13,50 +13,44 @@
 This file contains a generated index.html  for the Team Profile. It also contains code that was created using Javascript and Node.js. 
 
 ## Code Snippet
-```html
-const writeUp = (data) => {
-    console.log(data);
-    let employees_list = getEmployees(data);
-const fullHTML = ` 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Generator</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <div id="wrapper">
-        <div id="header">
-            My Team
+```javascript
+const generateManager = (manager) => {
+    return `
+        <div class="box">
+            <div class="employee">
+                <div class="topBlue">
+                    <div class="name">${manager.name}</div>
+                    <div class="jobTitle">Manager <img src="svgs/manager.svg" alt="Manager" /></div>
+                </div>
+                <div class="bottomGray">
+                    <ul>
+                        <li>
+                            <strong>ID:</strong>&nbsp;
+                            <div class="idnumber">${manager.employee_id}</div>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <a href="mailto:${manager.email}" class="email">${manager.email}</a>
+                        </li>
+                        <li>
+                            <strong>Office Number:</strong>
+                            <p>${manager.office_number}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="listBoxes">
-            ${employees_list}
-        </div>
-    </div>
-</body>
-</html>`;
-
-function writePage() {
-fs.writeFile("dist/index.html", fullHTML, err => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log("Generating index.html...");
-        }
-    });
-}}
+    `;
+}
 ```
 
-```html
-<html>
+```javascript
+<javascript>
 
-</html>
+</javascript>
 ```
 ## Video Link
-https://drive.google.com/file/d/1Tse29wdvTPrqfdxifOglogqGoLkWqr9_/view?usp=sharing
+https://drive.google.com/file/d/1Ho3u5N1xEJnzehEoWAAgxLC8lxTKiqLi/view
 
 ## Author Links 
 [LinkedIn](https://www.linkedin.com/in/rosario-miranda-b81170132/)<br />
